@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <link rel="shortcut icon" href="Brasil.ico" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Cadastro de Pilotos</h1>
+        <p id="subtitulo">Suas informações, preencha todos os campos.</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        
+        <div class="campo">
+            <label><strong>Em qual opção deseja iniciar o curso?</strong></label>
+            <label>
+                <input type="radio" name="novato" value="novato" checked>Novato
+            </label>
+            
+            <label>
+                <input type="radio" name="intermediario" value="intermediario">Intermediário
+            </label>
+            
+            <label>
+                <input type="radio" name="avançado" value="avançado">Avançado
+            </label>
+        </div>
+
+        <div>
+            <label for="planos"><strong>Pacote de Planos</strong></label>
+            <select id="planos">
+                <option selected disabled value="">Selecione</option>
+                <option>Junior-12Horas</option>
+                <option>Pleno -15Horas</option>
+                <option>Senior-72Horas</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione a marca do seu Rádio - Receptor:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="SPECKTRUM">
+                <label for="tecnologia1">SPECKTRUM</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="FUTABA">
+                <label for="tecnologia2">FUTABA</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JR-PROPO">
+                <label for="tecnologia3">JR-PROPO</label>
+                
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco de sua experiência:</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+    </form>
+</body>
+</html>
